@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Memobit Web Component</title>
+        <link rel="stylesheet" href="/styles/index.css" />
+        <link rel="stylesheet" href="/src/styles/dark-material.css" />
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">
+                <a href="/"><span>Memobit WebComponents</span>&nbsp;<span>Playground</span></a>
+            </div>
+            <div class="themeSelectorContainer">
+                <!--        <mem-theme-selector></mem-theme-selector>-->
+            </div>
+        </div>
+
+        <div class="playgroundContainer">
+            <script type="module" src="src/components/list/list.js"></script>
+            <script src="src/mocks/list.mock.js"></script>
+            <mem-list></mem-list>
+            <script>
+                document.addEventListener("DOMContentLoaded", (event) => {
+                    document.querySelector("mem-list").items = listMock;
+                });
+            </script>
+            <div style="padding: 24px; background-color: #145277">
+                <mem-delimiter hasVerticalMargins="true"></mem-delimiter>
+                <script type="module" src="src/components/delimiter/delimiter.js"></script>
+            </div>
+        </div>
+    </body>
+</html>

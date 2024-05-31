@@ -1,0 +1,26 @@
+{
+  "name": "@memobit/web-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "tsc --watch",
+    "pack": "cd src && npm pack",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc:typecheck:watch": "(cd src) & tsc -b -w"
+  },
+  "keywords": [
+    "memobit",
+    "web",
+    "components"
+  ],
+  "author": "Iulian Cristea",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5"
+  }
+}
